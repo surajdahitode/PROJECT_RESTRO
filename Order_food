@@ -1,0 +1,49 @@
+package projectrestro;
+import java.util.*;
+public class Order {
+	
+	
+	
+
+	
+		String nameOfFood;
+		private int priceOfFood;
+		String nameOfCustomer;
+		int customerId=0;
+		Order(String nameOfFood,String nameOfCustomer){
+			this.nameOfFood=nameOfFood;
+			this.nameOfCustomer=nameOfCustomer;
+			
+		}
+		Order(){
+			
+		}
+		public static void main(String[] args) {
+			Order ref=new Order();
+			
+		    
+		   
+		}
+		public void getPrice(int j,int c) {
+			ArrayList<Integer> arr1=new ArrayList();
+				arr1.add(40);
+				arr1.add(70);
+				arr1.add(120);
+				arr1.add(80);
+				arr1.add(70);
+			    arr1.add(60);
+			    arr1.add(40);
+			    arr1.add(80);
+			    arr1.add(30);
+			    arr1.add(40);
+			    
+			    priceOfFood=arr1.get(j);
+			customerId=customerId+c;
+			MenuList mm=new MenuList();		
+			mm.setPrice(nameOfCustomer , nameOfFood,priceOfFood,customerId);
+			
+		}
+
+	}
+
+
